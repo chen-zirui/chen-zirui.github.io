@@ -157,3 +157,10 @@ span.highlight {
 .paper-links a.tag:focus {
   border-color: #f09228;
 }
+
+.comment-line {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #888888;
+  font-style: italic;
+}
