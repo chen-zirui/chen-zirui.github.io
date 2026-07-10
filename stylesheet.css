@@ -164,3 +164,45 @@ span.highlight {
   color: #888888;
   font-style: italic;
 }
+
+.service-list {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-list td {
+  padding: 10px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.service-list ul {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+
+.service-list li {
+  margin: 6px 0;
+}
+
+.ccf-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border: 1px solid #1772d0;
+  border-radius: 4px;
+  color: #1772d0;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+  vertical-align: 1px;
+}
+
+.ccf-badge.paper-rank {
+  margin-right: 0;
+  margin-left: 6px;
+}
