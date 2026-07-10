@@ -805,8 +805,8 @@ html[data-theme="dark"] .rank-c {
 
   .research-pipeline {
     grid-template-columns: 1fr;
-    gap: 16px;
-    margin-top: 22px;
+    gap: 10px;
+    margin-top: 16px;
     padding: 0;
   }
 
@@ -819,12 +819,18 @@ html[data-theme="dark"] .rank-c {
   }
 
   .stage-head {
-    min-height: 74px;
-    padding: 12px 22px 12px 12px;
+    min-height: 54px;
+    padding: 8px 22px 8px 10px;
     background: linear-gradient(90deg, var(--accent-strong), var(--accent));
     clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
     justify-content: flex-start;
     text-align: left;
+  }
+
+  .stage-head h4 {
+    font-size: 13px;
+    line-height: 1.15;
+    transform: none;
   }
 
   .pipeline-stage:last-child .stage-head {
@@ -832,24 +838,33 @@ html[data-theme="dark"] .rank-c {
   }
 
   .stage-node {
-    position: absolute;
-    top: auto;
-    bottom: -17px;
-    left: 50%;
-    width: 34px;
-    height: 34px;
-    margin-right: 0;
-    transform: translateX(-50%);
+    position: static;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    border-width: 2px;
+    flex: 0 0 auto;
+    transform: none;
   }
 
   .stage-node::before,
   .stage-node::after {
-    display: block;
+    display: none;
   }
 
   .stage-papers {
     align-content: center;
-    padding: 42px 4px 8px;
+    gap: 5px;
+    padding: 7px 2px 2px;
+  }
+
+  .stage-paper {
+    padding: 7px 9px;
+    border-radius: 9px;
+  }
+
+  .stage-paper small {
+    margin-top: 2px;
   }
 
   .award-note {
@@ -902,11 +917,12 @@ html[data-theme="dark"] .rank-c {
   }
 
   .research-program {
-    padding: 22px 18px;
+    padding: 18px 14px;
+    border-radius: 16px;
   }
 
   .stage-papers {
-    padding: 42px 4px 8px;
+    padding: 7px 2px 2px;
   }
 
   .service-card ul {
