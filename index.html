@@ -1,267 +1,244 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Zirui Chen</title>
-  
-  <meta name="author" content="Zirui Chen">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="author" content="Zirui Chen">
+  <meta name="description" content="Zirui Chen is a Ph.D. student in Software Engineering at Zhejiang University, working on vulnerability exploits and software security.">
+  <meta name="theme-color" content="#f5f7fb">
+
+  <title>Zirui Chen · Software Engineering Researcher</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="img/zirui.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = savedTheme || preferredTheme;
+    })();
+  </script>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Zirui Chen（陈梓瑞）</name>
-              </p>
-              <p>I am a third-year Ph.D. student in Software Engineering at <a
-				  href="https://www.zju.edu.cn/" target="_blank">Zhejiang University</a>.
-				    I am very fortunate to work under the supervision of Prof. Xiaohu Yang,
-				  Prof. <a href="https://xing-hu.github.io/" target="_blank">Xing Hu</a>, and
-				  Prof. <a href="https://xin-xia.github.io/" target="_blank">Xin Xia</a>.
-				    My research mainly focuses on vulnerability exploits. My recent work
-				  identified over 1,500 confirmed missing affected versions in CPE.
-				    Previously, I obtained my B.S. in Software Engineering from Zhejiang
-				  University.
-				</p>
-              <p style="text-align:center">
-                <a href="mailto:chenzirui@zju.edu.cn" target="_blank">Email</a> &nbsp/&nbsp
-                <a href="pdf/Resume.pdf" target="_blank">CV</a> &nbsp/&nbsp
-                <a href="https://github.com/chen-zirui" target="_blank">GitHub</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:20%;max-width:20%">
-              <a href="img/zirui.jpeg"><img class="circular--square" style="width:100%;max-width:100%" alt="profile photo" src="img/zirui.jpeg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="site-logo" href="#about" aria-label="Back to top">
+        <span class="logo-mark">ZC</span>
+        <span>Zirui Chen</span>
+      </a>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:100%;vertical-align:middle">
-              <heading>Educations</heading>
-            </td>
-          </tr>
-          </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>PhD in Software Engineering</papertitle>
-              <br>
-                2023.9 - Present
-              <br>
-              <em>
-                Zhejiang University, China
-              </em>
-            </td>
-          </tr> 
-        </tbody></table>
-  
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>Bachelor in Software Engineering</papertitle>
-              <br>
-                2019.9 - 2023.6
-              <br>
-              <em>
-                Zhejiang University, China
-              </em>
-            </td>
-          </tr> 
-        </tbody></table>
-        <table ></table>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Service</a>
+      </nav>
 
-        <br />
-        <br />
-        
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:10px;width:100%;vertical-align:middle">
-              <heading>Publications</heading>
-            </td>
-          </tr>
-        </tbody></table>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+        <span class="sun-icon" aria-hidden="true">☀</span>
+        <span class="moon-icon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:4px 10px;width:100%;vertical-align:middle;">
-                <span class="comment-line">
-                  We provide replication packages for our papers using Docker images.
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+  <main>
+    <section class="hero section-shell" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">Ph.D. Student · Software Engineering</p>
+        <h1>Zirui Chen <span>陈梓瑞</span></h1>
+        <p class="bio">
+          I am a third-year Ph.D. student in Software Engineering at
+          <a href="https://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a>.
+          I am fortunate to work under the supervision of Prof. Xiaohu Yang,
+          Prof. <a href="https://xing-hu.github.io/" target="_blank" rel="noopener">Xing Hu</a>,
+          and Prof. <a href="https://xin-xia.github.io/" target="_blank" rel="noopener">Xin Xia</a>.
+          My recent work identified over 1,500 confirmed missing affected versions in CPE.
+          Previously, I obtained my B.S. in Software Engineering from Zhejiang University.
+        </p>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>Assessing the Cross-Version Applicability of Java Library Vulnerability Exploits</papertitle>
-              <span class="ccf-badge paper-rank">CCF-A</span>
-              
-              <br>
-              <strong>Zirui Chen</strong>,
-              Qi Zhan,
-              Jiayuan Zhou,
-              Xing Hu,
-              Xin Xia,
-              Xiaohu Yang
-              <br>
-							<em>41st IEEE/ACM International Conference on Automated Software Engineering (ASE)</em>, 2026 (Direct acceptance rate: 115/1236 = 9.3%)
-            </td>
-          </tr> 
-          <tr>
-            <td class="paper-links">
-              <a class="tag" href="https://arxiv.org/abs/2603.25997" target="_blank">PDF</a>
-              <a class="tag" href="https://zenodo.org/records/20424100" target="_blank">Code</a>
-            </td>
-          </tr>
-        </tbody></table>
-         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities</papertitle>
-              <span class="ccf-badge paper-rank">CCF-A</span>
-              
-              <br>
-              <strong>Zirui Chen</strong>,
-              Zhipeng Xue,
-              Jiayuan Zhou,
-              Xing Hu,
-              Xin Xia,
-              Xiaohu Yang
-              <br>
-							<em>48th International Conference on Software Engineering (ICSE)</em>, 2026 (Direct acceptance rate at Cycle 2: 72/795 = 9.1%)
-            </td>
-          </tr> 
-          <tr>
-            <td class="paper-links">
-              <a class="tag" href="https://arxiv.org/abs/2511.12950" target="_blank">PDF</a>
-              <a class="tag" href="https://github.com/chen-zirui/PoCAdaptation" target="_blank">Code</a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>Exploiting Library Vulnerability via Migration Based Automating Test Generation</papertitle>
-              <span class="ccf-badge paper-rank">CCF-A</span>
-              
-              <br>
-              <strong>Zirui Chen</strong>,
-              Xing Hu,
-              Xin Xia,
-              Yi Gao,
-              Tongtong Xu,
-              David Lo,
-              Xiaohu Yang
-              <br>
-							<em>46th International Conference on Software Engineering (ICSE)</em>, 2024 (Acceptance rate: 234/1051 = 22.3%)
-            </td>
-          </tr> 
-          <tr>
-            <td class="paper-links">
-              <a class="tag" href="https://arxiv.org/abs/2312.09564" target="_blank">PDF</a>
-              <a class="tag" href="https://github.com/chen-zirui/TestMigration" target="_blank">Code</a>
-            </td>
-          </tr>
-        </tbody></table>
+        <div class="profile-links" aria-label="Profile links">
+          <a class="button button-primary" href="mailto:chenzirui@zju.edu.cn">Email me</a>
+          <a class="button button-secondary" href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=VB3JuaMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="text-link" href="https://github.com/chen-zirui" target="_blank" rel="noopener">
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
 
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>Generating Mitigations for Downstream Projects to Neutralize Upstream Library Vulnerability</papertitle>
-              
-              <br>(Direct acceptance rate at Cycle 2: 72/795 = 9.1%)
-              <strong>Zirui Chen</strong>,
-			  Puhua Sun,
-              Xing Hu, 
-              Xin Xia,
-              Xiaohu Yang
-              <br>
-							<em> Under Revision</em>
-            </td>
-          </tr>
-          <tr>
-            <td class="paper-links">
-               <a class="tag" href="https://arxiv.org/abs/2503.24273" target="_blank">PDF</a>
-              <a class="tag" href="https://github.com/chen-zirui/LUMEN" target="_blank">Code</a>
-            </td>
-          </tr>
-        </tbody></table> -->
+        <div class="research-focus">
+          <span>Library Vulnerabilities</span>
+          <span>Exploit Migration</span>
+          <span>Automated Testing</span>
+        </div>
+      </div>
 
+      <aside class="profile-panel" aria-label="Profile photo">
+        <div class="portrait-wrap">
+          <img src="img/zirui.jpeg" alt="Portrait of Zirui Chen">
+        </div>
+      </aside>
+    </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:75%;vertical-align:middle">
-              <papertitle>Every Maintenance Has Its Exemplar: The Future of Software Maintenance through Migration</papertitle>
-              <span class="ccf-badge paper-rank">CCF-A</span>
-              
-              <br>
-              <strong>Zirui Chen</strong>,
-              Xing Hu,
-              Xin Xia,
-              Xiaohu Yang
-              <br>
-							<em>ACM Transactions on Software Engineering and Methodology (TOSEM)</em>, 2025
-            </td>
-          </tr> 
-        </tbody></table>
+    <section class="content-section section-shell" id="education">
+      <div class="section-heading">
+        <p class="section-index">01</p>
+        <div>
+          <h2>Education</h2>
+          <p>My academic journey at Zhejiang University.</p>
+        </div>
+      </div>
 
-        <br>
+      <div class="education-grid">
+        <article class="education-card">
+          <p class="date">Sep. 2023 — Present</p>
+          <h3>Ph.D. in Software Engineering</h3>
+          <p>Zhejiang University, China</p>
+        </article>
+        <article class="education-card">
+          <p class="date">Sep. 2019 — Jun. 2023</p>
+          <h3>B.S. in Software Engineering</h3>
+          <p>Zhejiang University, China</p>
+        </article>
+      </div>
+      <p class="award-note"><strong>National Scholarship</strong> · 2024</p>
+    </section>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:10px;width:100%;vertical-align:middle">
-              <heading>Academic Service</heading>
-            </td>
-          </tr>
-        </tbody></table>
+    <section class="content-section section-shell" id="publications">
+      <div class="section-heading">
+        <p class="section-index">02</p>
+        <div>
+          <h2>Selected Publications</h2>
+          <p>Replication packages are provided as Docker images whenever available.</p>
+        </div>
+      </div>
 
-        <table class="service-list"><tbody>
-          <tr>
-            <td>
-              <papertitle>Reviewer</papertitle>
-              <ul>
-                <li>
-                  International Journal of Software Engineering and Knowledge Engineering
-                  <span class="ccf-badge">CCF-C</span>
-                </li>
-                <li>
-                  Journal of Software: Evolution and Process
-                  <span class="ccf-badge">CCF-B</span>
-                </li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
+      <div class="publication-list">
+        <article class="publication-card">
+          <div class="publication-meta">
+            <span class="publication-year">2026</span>
+            <span class="rank rank-a">CCF-A</span>
+          </div>
+          <div class="publication-content">
+            <h3>Assessing the Cross-Version Applicability of Java Library Vulnerability Exploits</h3>
+            <p class="authors">
+              <strong>Zirui Chen</strong>, Qi Zhan, Jiayuan Zhou, Xing Hu, Xin Xia, Xiaohu Yang
+            </p>
+            <p class="venue">
+              41st IEEE/ACM International Conference on Automated Software Engineering
+              <span>ASE 2026</span>
+            </p>
+            <p class="acceptance">Direct acceptance rate: 115/1236 = 9.3%</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2603.25997" target="_blank" rel="noopener">Paper ↗</a>
+              <a href="https://zenodo.org/records/20424100" target="_blank" rel="noopener">Artifact ↗</a>
+            </div>
+          </div>
+        </article>
 
-				
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                <br> Thanks to <a href="https://jonbarron.info/">Jon Barron</a> for the template.
-                <br> Last updated: Nov. 14, 2025
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        
-      </td>
-    </tr>
-  </table>
+        <article class="publication-card">
+          <div class="publication-meta">
+            <span class="publication-year">2026</span>
+            <span class="rank rank-a">CCF-A</span>
+          </div>
+          <div class="publication-content">
+            <h3>Diffploit: Facilitating Cross-Version Exploit Migration for Open Source Library Vulnerabilities</h3>
+            <p class="authors">
+              <strong>Zirui Chen</strong>, Zhipeng Xue, Jiayuan Zhou, Xing Hu, Xin Xia, Xiaohu Yang
+            </p>
+            <p class="venue">
+              48th International Conference on Software Engineering
+              <span>ICSE 2026</span>
+            </p>
+            <p class="acceptance">Direct acceptance rate at Cycle 2: 72/795 = 9.1%</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2511.12950" target="_blank" rel="noopener">Paper ↗</a>
+              <a href="https://github.com/chen-zirui/PoCAdaptation" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-meta">
+            <span class="publication-year">2024</span>
+            <span class="rank rank-a">CCF-A</span>
+          </div>
+          <div class="publication-content">
+            <h3>Exploiting Library Vulnerability via Migration Based Automating Test Generation</h3>
+            <p class="authors">
+              <strong>Zirui Chen</strong>, Xing Hu, Xin Xia, Yi Gao, Tongtong Xu, David Lo, Xiaohu Yang
+            </p>
+            <p class="venue">
+              46th International Conference on Software Engineering
+              <span>ICSE 2024</span>
+            </p>
+            <p class="acceptance">Acceptance rate: 234/1051 = 22.3%</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2312.09564" target="_blank" rel="noopener">Paper ↗</a>
+              <a href="https://github.com/chen-zirui/TestMigration" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication-card">
+          <div class="publication-meta">
+            <span class="publication-year">2025</span>
+            <span class="rank rank-a">CCF-A</span>
+          </div>
+          <div class="publication-content">
+            <h3>Every Maintenance Has Its Exemplar: The Future of Software Maintenance through Migration</h3>
+            <p class="authors">
+              <strong>Zirui Chen</strong>, Xing Hu, Xin Xia, Xiaohu Yang
+            </p>
+            <p class="venue">
+              ACM Transactions on Software Engineering and Methodology
+              <span>TOSEM 2025</span>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="service">
+      <div class="section-heading">
+        <p class="section-index">03</p>
+        <div>
+          <h2>Academic Service</h2>
+          <p>Journal peer-review service.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-label">Reviewer</div>
+        <ul>
+          <li>
+            <span>International Journal of Software Engineering and Knowledge Engineering</span>
+            <span class="rank rank-c">CCF-C</span>
+          </li>
+          <li>
+            <span>Journal of Software: Evolution and Process</span>
+            <span class="rank rank-b">CCF-B</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>© 2026 Zirui Chen</p>
+    <p>Last updated July 2026 · Built for curiosity and open research.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.querySelector('.theme-toggle');
+    themeToggle.addEventListener('click', function () {
+      const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = nextTheme;
+      localStorage.setItem('theme', nextTheme);
+    });
+  </script>
 </body>
-
 </html>
