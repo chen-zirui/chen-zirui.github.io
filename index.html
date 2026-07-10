@@ -13,12 +13,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,600&amp;display=swap" rel="stylesheet">
   <link rel="icon" href="img/zirui.jpeg" type="image/jpeg">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css?v=20260710-research">
 
   <script>
     (function () {
-      const savedTheme = localStorage.getItem('theme');
       const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      let savedTheme = null;
+
+      try {
+        savedTheme = localStorage.getItem('theme');
+      } catch (error) {
+        // Some preview and cloud-rendering environments disable persistent storage.
+      }
+
       document.documentElement.dataset.theme = savedTheme || preferredTheme;
     })();
   </script>
@@ -343,7 +350,12 @@
     themeToggle.addEventListener('click', function () {
       const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
       document.documentElement.dataset.theme = nextTheme;
-      localStorage.setItem('theme', nextTheme);
+
+      try {
+        localStorage.setItem('theme', nextTheme);
+      } catch (error) {
+        // Theme switching still works for the current page without persistent storage.
+      }
     });
   </script>
 </body>
