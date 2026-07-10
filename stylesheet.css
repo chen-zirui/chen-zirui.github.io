@@ -98,22 +98,6 @@ a {
   font-weight: 700;
 }
 
-.logo-mark {
-  display: grid;
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  background: var(--accent);
-  color: var(--surface);
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  place-items: center;
-}
-
-html[data-theme="dark"] .logo-mark {
-  color: #11182a;
-}
-
 .site-nav {
   display: flex;
   gap: 30px;
