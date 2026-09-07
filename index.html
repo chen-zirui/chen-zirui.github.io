@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>Zirui Chen · Software Engineering Researcher</title>
   <link rel="icon" href="img/zirui.jpeg" type="image/jpeg">
-  <link rel="stylesheet" href="stylesheet.css?v=20260907">
+  <link rel="stylesheet" href="stylesheet.css?v=20260907-pipelines">
   <script>
     (function () {
       const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -106,37 +106,78 @@
         <article class="research-topic">
           <h3>Library Vulnerability</h3>
           <p>From constructing and migrating exploits to assessing exploitability and mitigating vulnerabilities.</p>
-          <dl class="research-works">
-            <div>
-              <dt>Exploit construction</dt>
-              <dd><a href="https://arxiv.org/abs/2607.01760" target="_blank" rel="noopener">Refploit</a> <span class="work-venue">(under review)</span></dd>
-            </div>
-            <div>
-              <dt>Exploit migration</dt>
-              <dd>
-                <span class="related-work"><a href="#diffploit">Diffploit</a> <span class="work-venue">(ICSE 2026)</span></span>
-                <span class="related-work"><a href="#ase2026">Cross-version empirical study</a> <span class="work-venue">(ASE 2026)</span></span>
-              </dd>
-            </div>
-            <div>
-              <dt>Exploitability assessment</dt>
-              <dd><a href="#vesta">VESTA</a> <span class="work-venue">(ICSE 2024)</span></dd>
-            </div>
-            <div>
-              <dt>Vulnerability mitigation</dt>
-              <dd><a href="https://arxiv.org/abs/2503.24273" target="_blank" rel="noopener">LUMEN</a> <span class="work-venue">(under review)</span></dd>
-            </div>
-          </dl>
+          <ol class="research-pipeline research-pipeline-four" aria-label="Library vulnerability research pipeline">
+            <li class="pipeline-stage">
+              <div class="stage-head">
+                <span class="stage-node" aria-hidden="true">01</span>
+                <h4>Exploit<br>Construction</h4>
+              </div>
+              <div class="stage-papers">
+                <a class="stage-paper" href="https://arxiv.org/abs/2607.01760" target="_blank" rel="noopener">
+                  <strong>Refploit</strong>
+                  <small>Under Review</small>
+                </a>
+              </div>
+            </li>
+            <li class="pipeline-stage">
+              <div class="stage-head">
+                <span class="stage-node" aria-hidden="true">02</span>
+                <h4>Exploit<br>Migration</h4>
+              </div>
+              <div class="stage-papers">
+                <a class="stage-paper" href="#diffploit">
+                  <strong>Diffploit</strong>
+                  <small>ICSE 2026</small>
+                </a>
+                <a class="stage-paper" href="#ase2026">
+                  <strong>Cross-Version Empirical</strong>
+                  <small>ASE 2026</small>
+                </a>
+              </div>
+            </li>
+            <li class="pipeline-stage">
+              <div class="stage-head">
+                <span class="stage-node" aria-hidden="true">03</span>
+                <h4>Exploitability<br>Assessment</h4>
+              </div>
+              <div class="stage-papers">
+                <a class="stage-paper" href="#vesta">
+                  <strong>VESTA</strong>
+                  <small>ICSE 2024</small>
+                </a>
+              </div>
+            </li>
+            <li class="pipeline-stage">
+              <div class="stage-head">
+                <span class="stage-node" aria-hidden="true">04</span>
+                <h4>Vulnerability<br>Mitigation</h4>
+              </div>
+              <div class="stage-papers">
+                <a class="stage-paper" href="https://arxiv.org/abs/2503.24273" target="_blank" rel="noopener">
+                  <strong>LUMEN</strong>
+                  <small>Under Review</small>
+                </a>
+              </div>
+            </li>
+          </ol>
         </article>
         <article class="research-topic">
           <h3>Agent Trajectory</h3>
           <p>Recovering useful progress from failed code-agent trajectories.</p>
-          <dl class="research-works">
-            <div>
-              <dt>Trajectory refinement</dt>
-              <dd><a href="https://arxiv.org/abs/2607.01760" target="_blank" rel="noopener">Refploit</a> <span class="work-venue">(under review)</span></dd>
-            </div>
-          </dl>
+          <ol class="research-pipeline research-pipeline-one" aria-label="Agent trajectory research pipeline">
+            <li class="pipeline-stage">
+              <div class="stage-head">
+                <span class="stage-node" aria-hidden="true">01</span>
+                <h4>Trajectory<br>Refinement</h4>
+              </div>
+              <div class="stage-papers">
+                <a class="stage-paper" href="https://arxiv.org/abs/2607.01760" target="_blank" rel="noopener">
+                  <strong>Refploit</strong>
+                  <small>Under Review</small>
+                </a>
+              </div>
+            </li>
+          </ol>
         </article>
       </div>
     </section>
