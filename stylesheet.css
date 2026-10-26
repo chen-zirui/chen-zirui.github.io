@@ -304,8 +304,8 @@ html[data-theme="dark"] .moon-icon {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.research-pipeline-one {
-  grid-template-columns: minmax(0, 1fr);
+.research-pipeline-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .research-pipeline::before {
@@ -338,6 +338,14 @@ html[data-theme="dark"] .moon-icon {
   font-size: 13px;
   font-weight: 600;
   line-height: 1.4;
+}
+
+.research-pipeline-two::before {
+  height: 88px;
+}
+
+.research-pipeline-two .stage-head {
+  min-height: 88px;
 }
 
 .stage-node {
@@ -383,7 +391,7 @@ html[data-theme="dark"] .moon-icon {
   content: "";
 }
 
-.research-pipeline-one .stage-papers {
+.research-pipeline-two .stage-papers {
   width: min(220px, 100%);
   margin-inline: auto;
 }
@@ -682,17 +690,20 @@ html[data-theme="dark"] .moon-icon {
 }
 
 @media (max-width: 900px) {
-  .research-pipeline-four {
+  .research-pipeline-four,
+  .research-pipeline-two {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 0;
   }
 
-  .research-pipeline-four::before {
+  .research-pipeline-four::before,
+  .research-pipeline-two::before {
     display: none;
   }
 
-  .research-pipeline-four .stage-head {
+  .research-pipeline-four .stage-head,
+  .research-pipeline-two .stage-head {
     min-height: 58px;
     gap: 12px;
     padding: 10px 30px 10px 12px;
@@ -702,18 +713,23 @@ html[data-theme="dark"] .moon-icon {
     text-align: left;
   }
 
-  .research-pipeline-four .stage-node {
+  .research-pipeline-four .stage-node,
+  .research-pipeline-two .stage-node {
     position: static;
     flex: 0 0 30px;
     border-width: 1px;
     border-color: var(--pipeline-text);
   }
 
-  .research-pipeline-four .stage-papers {
+  .research-pipeline-four .stage-papers,
+  .research-pipeline-two .stage-papers {
+    width: auto;
+    margin-inline: 0;
     padding: 14px 22px 0 54px;
   }
 
-  .research-pipeline-four .stage-papers::before {
+  .research-pipeline-four .stage-papers::before,
+  .research-pipeline-two .stage-papers::before {
     top: 0;
     left: 27px;
     height: 40px;
@@ -721,7 +737,8 @@ html[data-theme="dark"] .moon-icon {
     border-bottom: 1px solid var(--pipeline);
   }
 
-  .research-pipeline-four .stage-papers::after {
+  .research-pipeline-four .stage-papers::after,
+  .research-pipeline-two .stage-papers::after {
     top: 37px;
     left: 43px;
     border-top: 3px solid transparent;
